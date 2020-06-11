@@ -12,7 +12,7 @@ class Main {
     System.out.println("Hello world!");
 
     // Arrays are just arrays
-    String[] myArray = {"Shannon", "David", "Jonny", "Zack"};
+    String[] myArray = {"Harold", "James", "Frank", "Ralph"};
     System.out.printf("%s\n", myArray[0]);
     int size = myArray.length;
     System.out.println(size);
@@ -25,10 +25,10 @@ class Main {
 
     ArrayList<String> names = new ArrayList<String>();
     ArrayList<String> otherNames = new ArrayList<String>(5);
-    names.add("Shannon");
-    names.add("Rachel");
-    names.add("Susan");
-    names.add("Savannah");
+    names.add("Jack");
+    names.add("Doug");
+    names.add("Phil");
+    names.add("Joe");
     System.out.println(names.size());
     System.out.println(otherNames.size());
 
@@ -40,11 +40,11 @@ class Main {
 
     for(String name : names)System.out.println(name);
 
-    names.remove("Rachel");
+    names.remove("Phil");
     for(String name : names)System.out.println(name);
 
     Collections.reverse(names);
-    boolean check = names.contains("Rachel");
+    boolean check = names.contains("Robert");
     System.out.println(check);
     boolean otherCheck = names.contains("Danielle");
     System.out.println(otherCheck);
@@ -73,12 +73,12 @@ class Main {
     // HashMaps are not collections they are Maps
     HashMap<String, Integer> person = new HashMap<>();
     person.put("James", 18);
-    person.put("Jonny", 23);
-    person.put("David", 12);
+    person.put("Henry", 23);
+    person.put("Zack", 12);
     person.put("Juan", 45);
 
     System.out.println(person);
-    Integer ageJonny = person.get("Jonny");
+    Integer ageJonny = person.get("Henry");
     System.out.println(ageJonny);
 
     person.remove("Juan");
